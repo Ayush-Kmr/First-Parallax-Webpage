@@ -3,6 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* ========== */
+.bg3,
+.bg1,
+.bg2,
+.container {
+  background-color: hsla(220,60%,30%,0.4);
+  background-image:   
+    /* url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'),  */
+    /* url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'), */
+    /* url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'), */
+    /* url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'), */
+    url("https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png");
+  background-repeat: repeat-x;
+  background-position: 0 20%, 0 100%, 0 50%, 0 100%, 0 0;
+  background-size: 2000px, 800px, 500px 200px, 1000px, 400px 260px;
+  animation: 50s para infinite linear;
+}
+
+@keyframes para {
+  100% {
+    background-position: -4000px 20%, -700px 90%, 400px 50%, 800px 90%, 300px 0;
+  }
+}
+
+/* ========== */
 #wrapper {
   height: 100vh;
   overflow-x: hidden;
@@ -48,54 +73,66 @@ h1 {
   letter-spacing: 4px;
   font-size: 9rem;
   color: white;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0,0.3);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.3);
+}
+
+section {
+  background-color: rgb(45, 45, 45);
+  color: white;
+  padding: 5rem 0;
+}
+
+.secHeading {
+  font-size: 5rem;
+  padding: 0 10rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  padding: 0 10rem;
+  margin: 5rem 0;
+}
+.bg {
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.desc {
+  position: absolute;
+  background-color: white;
+  padding: 0.5 2.5rem;
+  top: 50%;
+  left: 35%;
+  translate: translateX(-50%) translateY(-500%);
+  color: black;
+  font-size: 3.5rem;
+  font-weight: 600;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    pink,
+    rgb(222, 237, 192),
+    rgb(185, 185, 222),
+    pink
+  );
+}
+.bg1 {
+  background-image: url(sport-1.jpg);
+}
+.bg2 {
+  background-image: url(sport-2.jpg);
+}
+.bg3 {
+  background-image: url(sport-3.jpg);
 }
 
 
-section{
-    background-color: rgb(45,45,45);
-    color: white;
-    padding: 5rem 0;
+@media  screen and (max-width:450px) {
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
-.secHeading{
-    font-size: 5rem;
-    padding: 0 10rem;
-}
-
-.text{
-    font-size: 1.5rem;
-    padding: 0 10rem;
-    margin: 5rem 0;
-}
-.bg{
-    position: relative;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-size:cover;
-    height: 400px;
-}
-.desc{
-    position: absolute;
-    background-color: white;
-    padding: 0.5 2.5rem;
-    top: 50%;
-    left: 35%;
-    translate: translateX(-50%) translateY(-500%);
-    color: black;
-    font-size: 3.5rem;
-    font-weight: 600;
-    border-radius: 15px;
-    background-image: linear-gradient(pink,rgb(222, 237, 192),rgb(185, 185, 222),pink);
-}
-.bg1{
-    background-image: url(sport-1.jpg);
-}
-.bg2{
-    background-image: url(sport-2.jpg);
-}
-.bg3{
-    background-image:url(sport-3.jpg);
-}
-
